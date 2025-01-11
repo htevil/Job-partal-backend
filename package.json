@@ -2,9 +2,13 @@
   "name": "job_portal-backend",
   "version": "1.0.0",
   "main": "server.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm rebuild sqlite3"
   },
   "keywords": [],
   "author": "",
